@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 100, 0, 0.2), rgba(0, 80, 0, 0.3)),  url(background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2em 2.5em 4em;
+    text-align: center;
+    border-radius: 2em;
+    border: 0.25em solid rgb(32, 56, 1);
+}
+
+.form-box h1, .line {
+    font-size: 1.5em;
+    margin-bottom: 4em;
+    color: #1ba000;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 2em;
+    height: 0.20em;
+    border-radius: 0.50em;
+    background-color: #1ba000;
+    position: absolute;
+    bottom: -0.55em;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-field{
+    background: #eeeeee;
+    margin-top: 1.25em;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    height: 3.5em;
+    max-height: 4em;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    /* margin-left: 2em; */
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    /* padding: 18px, 15px; */
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+.input-field i {
+    margin-left: 1em;
+    color: #1ba000;
+}
+
+form p {
+    text-align: left;
+    font-size: 0.75;
+    margin-top: 1em;
+}
+
+form p a {
+    text-decoration: none;
+    color: #1ba000;
+
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background-color: #20c000;
+    color: #ffffff;
+    height: 2.5em;
+    border-radius: 1em;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+    .btn-field button:hover{
+        background-color: #126b00;
+        transition: background-color 1s;
+        /* transform: scale(0.3); */
+    }
+
+.btn-field button.disable {
+    background : #c5c4c4;
+    color:#168300
+}
